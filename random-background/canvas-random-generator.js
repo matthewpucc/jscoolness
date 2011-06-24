@@ -52,10 +52,12 @@
 			} else {
 				thisColor = $RGB( $random( 0, 255 ), $random( 0, 255 ), $random( 0, 255 ) );
 			} 
+            
 			start = {
 				x: $random( 0, canvasWidth ),
 				y: $random( 0, canvasHeight )
 			};
+            
 			end = {
 				x: start.x + $random( -1 * cs.lineLength, cs.lineLength ),
 				y: start.y + $random( -1 * cs.lineLength, cs.lineLength ),
