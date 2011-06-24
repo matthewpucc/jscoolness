@@ -11,7 +11,7 @@
 	window.randomizeCanvas = function( canvas_id,  options ) {
 		
 		var utilities = { 
-			ohNoMrBill : function( error_msg, DEBUG ) {
+			ohNoMrBill : function( error_msg ) {
 				if( window.console != undefined && cs.DEBUG ) {
 					window.console.error( error_msg );
 				}
