@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="mootools-core-1.3.2-full-compat-yc.js"></script>
+		<script type="text/javascript" src="mootools-more-1.3.2.1.js"></script>
+		<script type="text/javascript" src="canvas-random-generator.js"></script>
+		<script type="text/javascript">
+			window.addEvent( 'domready', function() {
+				var canvas = $( 'my-canvas' );
+				canvas.setAttribute( 'height', window.innerHeight - 10 );
+				canvas.setAttribute( 'width', window.innerWidth - 10 );
+				randomizeCanvas( 'my-canvas', { baseColor: $RGB( 100, 0, 200), brightnessMaxVariance: 50 } );
+			} );
+		</script>
+	</head>
+	<body>
+		<canvas id="my-canvas" />
+	</body>
+</html>
+		
