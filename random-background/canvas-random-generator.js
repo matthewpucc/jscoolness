@@ -4,7 +4,7 @@
 		DEBUG: true,
 		baseColor: false,
 		count: 250,
-		colorMaxVariance: 25,
+		brightnessMaxVariance: 25,
 		lineLength: 2
 	};
 	
@@ -48,7 +48,7 @@
 			
 			if( cs.baseColor != false ) {
 				thisColor = Object.clone( cs.baseColor );
-				thisColor = thisColor.setBrightness( thisColor.hsb[2] + $random( cs.colorMaxVariance * -1, cs.colorMaxVariance ) );
+				thisColor = thisColor.setBrightness( thisColor.hsb[2] + $random( cs.brightnessMaxVariance * -1, cs.brightnessMaxVariance ) );
 			} else {
 				thisColor = $RGB( $random( 0, 255 ), $random( 0, 255 ), $random( 0, 255 ) );
 			} 
