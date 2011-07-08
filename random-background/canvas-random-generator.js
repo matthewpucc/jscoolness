@@ -1,4 +1,4 @@
-(function(undefined) {
+( function(undefined) {
 	
 	var settings = {
 		DEBUG: true,
@@ -64,7 +64,7 @@
 			};
 			
 			utilities.drawLine( start, end, thisColor );
+			
 		}
-	}
-}
-)();
+	};
+} )();
