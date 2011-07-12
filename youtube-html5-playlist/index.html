@@ -1,25 +1,21 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-        <script src="modernizr.min.js"></script>
+        <script src="jquery.html5.yt-gallery.js"></script>
         <script>
-            Modernizr.load( {
-                test: Modernizr.csstransforms3d,
-                yep: 'wowza.js'
+            $(function() {
+                $('#put-it-here-2').ytgallery('63F0C78739B09958');
+                $('#put-it-here').ytgallery('FBD82D6FD745CF7D');
             });
-        </script>
+            </script>
     </head>
     <body>
         <div style="margin: 0 auto; width: 800px;">
-            <div id="put-it-here"></div>
-            <div id="player"></div>
+            <div id="put-it-here" style="margin: 0 auto; width: 800px; height: 400px;"></div>
+            <div id="put-it-here-2" style="margin: 0 auto; width: 800px; height: 400px;"></div>
         </div>
     </body>
 </html>
